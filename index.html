@@ -12,7 +12,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
   </head>
   <body>
     <div id="card">
@@ -35,12 +35,12 @@
           </svg>
         </button>
       </div>
-      <div id="weather">
+      <div class="weather loading">
         <h2 id="city">Weather in [city]</h2>
         <h1 id="temp">#°</h1>
         <div id="flex">
-          <img src="" alt="" id="icon" />
-          <div id="description">Cloudy</div>
+          <img src="" alt="forecast" id="icon" />
+          <div id="description">description</div>
         </div>
         <div id="humidity">Humidity:</div>
         <div id="wind">Wind speed:</div>

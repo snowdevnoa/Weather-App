@@ -1,69 +1,88 @@
 body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
-    background: #222;
-    font-family: 'Smooch Sans', sans-serif;
-    background-image: url('https://source.unsplash.com/1600x900/?landscape')
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background: #222;
+  font-family: "Smooch Sans", sans-serif;
+  background-image: url("https://source.unsplash.com/3840x2160/?weather");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
 }
 
 #card {
-    background: rgba(0, 0, 0, 0.733);
-    color: rgb(255, 255, 255);
-    border-radius: 30px;
-    padding: 1em 2em;
-    width: 100%;
-    max-width: 420px;
-    margin: 1em;
+  background: rgba(0, 0, 0, 0.733);
+  color: rgb(255, 255, 255);
+  border-radius: 30px;
+  padding: 1em 2em;
+  width: 100%;
+  max-width: 420px;
+  margin: 1em;
 }
 
-#search{
-    display: flex;
-    align-items: center;
-    justify-content: center;
+#search {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 button {
-    margin: .5em;
-    border-radius: 50%;
-    border: none;
-    height: 3em;
-    width: 3em;
-    outline: none;
-    background: #6f6f7028;
-    color: white;
-    cursor: pointer;
-    transition: 0.2s ease-in-out;
+  margin: 0.5em;
+  border-radius: 50%;
+  border: none;
+  height: 3em;
+  width: 3em;
+  outline: none;
+  background: #6f6f7028;
+  color: white;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
 }
 
 input#search-bar {
-    border: none;
-    outline: none;
-    border-radius: 24px;
-    padding: .5em 1em;
-    background: #6f6f7028;
-    color: white;
-    font-family: inherit;
-    font-size: 120%;
-    width: calc(100% - 100px);
+  border: none;
+  outline: none;
+  border-radius: 24px;
+  padding: 0.5em 1em;
+  background: #6f6f7028;
+  color: white;
+  font-family: inherit;
+  font-size: 120%;
+  width: calc(100% - 100px);
 }
 
 button:hover {
-    background: #7c7c7c;
+  background: #7c7c7c;
 }
 
 div#description {
-    text-transform: capitalize;
-    margin-left: 0.5rem;
+  text-transform: capitalize;
+  margin-left: 0.5rem;
 }
 
-div#flex{
-    display: flex;
-    align-items: center;
+div#flex {
+  display: flex;
+  align-items: center;
 }
 
-h1#temp{
-    margin:0.25em 0;
+h1#temp {
+  margin: 0.25em 0;
+}
+
+.weather.loading {
+  visibility: hidden;
+  display: none;
+  max-height: 20px;
+  position: relative;
+}
+
+.weather.loading:after {
+  visibility: visible;
+  content: "Loading. . .";
+  color: white;
+  position: absolute;
+  top: 0;
 }
