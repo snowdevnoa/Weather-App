@@ -16,5 +16,15 @@ let weather = {
     const { temp, humidity } = data.main;
     const { speed } = data.wind; //data is taken out of that object and made into a variable
     console.log(name, icon, description, temp, humidity, speed);
+    document.getElementById('city').innerText = "Weather in " + name;
+    document.getElementById('temp').innerText = Math.round(temp) + "°C";
+    document.getElementById('icon').src =
+      "http://openweathermap.org/img/wn/" + icon + ".png";
+    document.getElementById('description').innerText = description;
+    document.getElementById('humidity').innerText = "Humidity: " + humidity + "%";
+    document.getElementById('wind').innerText = "Wind speed: " + speed + " km/h";
+
+
+
   },
 };

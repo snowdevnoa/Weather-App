@@ -53,3 +53,17 @@ input#search-bar {
 button:hover {
     background: #7c7c7c;
 }
+
+div#description {
+    text-transform: capitalize;
+    margin-left: 0.5rem;
+}
+
+div#flex{
+    display: flex;
+    align-items: center;
+}
+
+h1#temp{
+    margin:0.25em 0;
+}
