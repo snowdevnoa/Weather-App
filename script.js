@@ -27,7 +27,7 @@ let weather = {
       "Wind speed: " + speed + " km/h";
     document.querySelector(".weather").classList.remove("loading");
     document.body.style.backgroundImage =
-      "url('https://source.unsplash.com/3840x2160/?" + name + "')";
+      "url('https://source.unsplash.com/2560x1440/?" + name + "')";
   },
   search: function () {
     this.fetchWeather(document.getElementById("search-bar").value);
